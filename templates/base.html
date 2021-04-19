@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="{{url_for('static',filename='images/icons/favicon.ico')}}" />
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/animate/animate.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/animsition/css/animsition.min.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/select2/select2.min.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendor/daterangepicker/daterangepicker.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/util.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/header.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/home.css')}}">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="../something.css?v=1.0.0">
+  <script src="../something.js?v=1.0.0"></script>
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+  <header class="main-header" >
+    <div class="container" >
+      <nav class="navbar navbar-expand-lg main-nav ">
+        <a class="navbar-brand">
+					     <img src="{{url_for('static',filename='images/healthbotic.png')}}" style="width:400px;">
+					    </a>
+       
+        <div class="collapse navbar-collapse" id="mainMenu">
+          <ul class="navbar-nav ml-auto text-uppercase f1">
+            <li>
+              <a href="home" class="active active-first">home</a>
+            </li>
+            <li>
+              <a href="kidney"> kidney</a>
+            </li>
+            <li>
+              <a href="heart_disease">Heart</a>
+            </li>
+            <li>
+              <a href="breast_cancer">Breast Cancer</a>
+            </li>
+            <li>
+              <a href="diabetes">Diabetes</a>
+            </li>
+            <li>
+              <a href="liver">Liver</a>
+            </li>
+          
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- /.container -->
+  </header>
+  {% block content %}{% endblock %}
+  <div class="card ">
+    <div class="card-body text-center">
+      <h3>{{prediction}}</h3>
+    </div>
+  </div>
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-image: linear-gradient(to right bottom, #a04ef6, #834aeb, #6446de, #4242d2, #013dc4);">
+      © 2020 Copyright:
+      <a href="home" font-size=25px style="color:black">HEALTHBOTIC.AI</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <div id="dropDownSelect1"></div>
+
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/animsition/js/animsition.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+
+  <script>
+    $(".selection-2").select2({
+      minimumResultsForSearch: 20,
+      dropdownParent: $('#dropDownSelect1')
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script src="vendor/daterangepicker/moment.min.js"></script>
+  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+  <!--===============================================================================================-->
+  <script src="js/main.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+
+</body>
+
+</html>

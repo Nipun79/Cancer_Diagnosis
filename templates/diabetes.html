@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+    
+{% block content %}
+<div class="container-contact100">
+    <div class="wrap-contact100">
+      <span class="contact100-form-title">
+        Diabetes Predictor:
+      </span>
+      <form action="{{ url_for('predict_diabetes')}}" method="post">
+        <div class="form-group row pt-3"> 
+            <div class="form-group col">
+              <div class="form-group row">
+              <label for="Pregnancies" class="col-sm col-form-label-sm">Pregnancies: </label>
+              <div class="col-auto">
+                <input type="text" class="form-control form-control-sm" id="Pregnancies" required="required" name="Pregnancies">
+              </div>
+              </div>
+            </div>
+  
+            <div class="form-group col ">
+              <div class="form-group row  ">
+              <label for="Glucose" class="col-sm col-form-label-sm ">Glucose: </label>
+              <div class="col-auto ">
+                <input type="text" class="form-control form-control-sm" id="Glucose" required="required" name="Glucose">
+              </div>
+              </div>
+            </div>
+  
+        </div>
+
+        <div class="form-group row pt-3"> 
+            <div class="form-group col">
+              <div class="form-group row">
+              <label for="BloodPressure" class="col-sm col-form-label-sm">BloodPressure: </label>
+              <div class="col-auto">
+                <input type="text" class="form-control form-control-sm" id="BloodPressure" required="required" name="BloodPressure">
+              </div>
+              </div>
+            </div>
+  
+            <div class="form-group col ">
+              <div class="form-group row  ">
+              <label for="SkinThickness" class="col-sm col-form-label-sm ">SkinThickness: </label>
+              <div class="col-auto ">
+                <input type="text" class="form-control form-control-sm" id="SkinThickness" required="required" name="SkinThickness">
+              </div>
+              </div>
+            </div>
+  
+        </div>
+
+        <div class="form-group row pt-3"> 
+            <div class="form-group col">
+              <div class="form-group row">
+              <label for="Insulin" class="col-sm col-form-label-sm">Insulin: </label>
+              <div class="col-auto">
+                <input type="text" class="form-control form-control-sm" id="Insuline" required="required" name="Insulin">
+              </div>
+              </div>
+            </div>
+  
+            <div class="form-group col ">
+              <div class="form-group row  ">
+              <label for="BMI" class="col-sm col-form-label-sm ">BMI: </label>
+              <div class="col-auto ">
+                <input type="text" class="form-control form-control-sm" id="BMI" required="required" name="BMI">
+              </div>
+              </div>
+            </div>
+  
+        </div>
+
+        <div class="form-group row pt-3"> 
+            <div class="form-group col">
+              <div class="form-group row">
+              <label for="DiabetesPedigreeFunction" class="col-sm col-form-label-sm">DPFunction: </label>
+              <div class="col-auto">
+                <input type="text" class="form-control form-control-sm" id="DiabetesPedigreeFunction" required="required" name="DiabetesPedigreeFunction">
+              </div>
+              </div>
+            </div>
+  
+            <div class="form-group col ">
+              <div class="form-group row  ">
+              <label for="Age" class="col-sm col-form-label-sm ">Age: </label>
+              <div class="col-auto ">
+                <input type="text" class="form-control form-control-sm" id="Age" required="required" name="Age">
+              </div>
+              </div>
+            </div>
+  
+        </div>
+     
+    <div class="container-contact100-form-btn">
+            <div class="wrap-contact100-form-btn">
+              <div class="contact100-form-bgbtn"></div>
+              <button class="contact100-form-btn">
+                <span>
+                  Submit
+                  <i class="fa fa-long-arrow-right m-l-20 " aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+          </div>
+          </form>
+          </div>
+          </div>
+
+{% endblock %}

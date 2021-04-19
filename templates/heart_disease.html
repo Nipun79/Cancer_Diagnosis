@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+    
+{% block content %}
+<div class="container-contact100">
+  <div class="wrap-contact100">
+    <span class="contact100-form-title">
+      Heart Disease Predictor:
+    </span>
+   <form action="{{ url_for('predict_heart_disease')}}" method="POST">
+     <div class="form-group row pt-3"> 
+          <div class="form-group col">
+            <div class="form-group row">
+            <label for="age" class="col-sm col-form-label-sm">Age: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="age" required="required" name="age">
+            </div>
+            </div>
+          </div>
+
+          <div class="form-group col ">
+            <div class="form-group row  ">
+            <label for="sex" class="col-sm col-form-label-sm ">sex: </label>
+            <div class="col-auto ">
+              <input type="text" class="form-control form-control-sm" id="sex" required="required" name="sex">
+            </div>
+            </div>
+          </div>
+
+      </div>
+   
+
+      <div class="form-group row pt-3"> 
+        <div class="form-group col">
+          <div class="form-group row">
+          <label for="cp" class="col-sm col-form-label-sm">cp: </label>
+          <div class="col-auto">
+            <input type="text" class="form-control form-control-sm" id="cp" required="required" name="cp">
+          </div>
+          </div>
+        </div>
+
+        <div class="form-group col ">
+          <div class="form-group row  ">
+          <label for="trestbps" class="col-sm col-form-label-sm ">trestbps: </label>
+          <div class="col-auto ">
+            <input type="text" class="form-control form-control-sm" id="trestbps" required="required" name="trestbps">
+          </div>
+          </div>
+        </div>
+
+      </div>
+    <div class="form-group row pt-3"> 
+      <div class="form-group col">
+        <div class="form-group row">
+        <label for="chol" class="col-sm col-form-label-sm">chol: </label>
+        <div class="col-auto">
+          <input type="text" class="form-control form-control-sm" id="chol" required="required" name="chol">
+        </div>
+        </div>
+      </div>
+
+      <div class="form-group col ">
+        <div class="form-group row  ">
+        <label for="fbs" class="col-sm col-form-label-sm ">fbs: </label>
+        <div class="col-auto ">
+          <input type="text" class="form-control form-control-sm" id="fbs" required="required" name="fbs">
+        </div>
+        </div>
+      </div>
+
+  </div>
+  <div class="form-group row pt-3"> 
+    <div class="form-group col">
+      <div class="form-group row">
+      <label for="restecg" class="col-sm col-form-label-sm">restecg: </label>
+      <div class="col-auto">
+        <input type="text" class="form-control form-control-sm" id="restecg" required="required" name="restecg">
+      </div>
+      </div>
+    </div>
+
+    <div class="form-group col ">
+      <div class="form-group row  ">
+      <label for="thalach" class="col-sm col-form-label-sm ">thalach: </label>
+      <div class="col-auto ">
+        <input type="text" class="form-control form-control-sm" id="thalach" required="required" name="thalach">
+      </div>
+      </div>
+    </div>
+
+</div>
+
+<div class="form-group row pt-3"> 
+  <div class="form-group col">
+    <div class="form-group row">
+    <label for="exang" class="col-sm col-form-label-sm">exang: </label>
+    <div class="col-auto">
+      <input type="text" class="form-control form-control-sm" id="exang" required="required" name="exang">
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group col ">
+    <div class="form-group row  ">
+    <label for="oldpeak" class="col-sm col-form-label-sm ">oldpeak: </label>
+    <div class="col-auto ">
+      <input type="text" class="form-control form-control-sm" id="oldpeak" required="required" name="oldpeak">
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="form-group row pt-3"> 
+  <div class="form-group col">
+    <div class="form-group row">
+    <label for="slope" class="col-sm col-form-label-sm">slope: </label>
+    <div class="col-auto">
+      <input type="text" class="form-control form-control-sm" id="slope" required="required" name="slope">
+    </div>
+    </div>
+  </div>
+
+  <div class="form-group col ">
+    <div class="form-group row  ">
+    <label for="ca" class="col-sm col-form-label-sm ">ca: </label>
+    <div class="col-auto ">
+      <input type="text" class="form-control form-control-sm" id="ca" required="required" name="ca">
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="form-group row pt-3"> 
+  <div class="form-group col">
+    <div class="form-group row">
+    <label for="thal" class="col-sm col-form-label-sm">thal: </label>
+    <div class="col-auto">
+      <input type="text" class="form-control form-control-sm" id="thal" required="required" name="thal">
+    </div>
+    </div>
+  </div>
+  <div class="form-group col">
+    <div class="form-group row">
+    <label for="" class="col-sm col-form-label-sm"></label>
+    <div class="col-auto">
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-contact100-form-btn">
+  <div class="wrap-contact100-form-btn">
+    <div class="contact100-form-bgbtn"></div>
+    <button class="contact100-form-btn">
+      <span>
+        Submit
+        <i class="fa fa-long-arrow-right m-l-20 " aria-hidden="true"></i>
+      </span>
+    </button>
+  </div>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+{% endblock %}
+

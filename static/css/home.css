@@ -1,0 +1,25 @@
+.col.content-main>p
+{
+FONT-SIZE:18px;
+LINE-HEIGHT:27px;
+color :#282828;
+background-color:#ffffff;
+font-weight: 700;
+padding: 0 0 18px 0;
+}
+.col.col.content-main>h3{
+  color:#651fff; 
+  font-size: 48px;
+  line-height:64.8px; 
+  text-align:start;
+}
+.col.content-main.content-img
+{
+ 
+FONT-SIZE:18px;
+LINE-HEIGHT:27px;
+color :#282828;
+background-color:#ffffff;
+font-weight: 700;
+padding: 0 0 18px 0;
+}

@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  .center {
+    margin: auto;
+    width: 70%;
+
+    padding: 20px;
+    width: 1060px;
+  }
+
+  .center>p {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .col.body-border {
+    background-color: black;
+    display: block;
+    color: white;
+  }
+
+  .col.content-main.body-border-text {
+    position: justify;
+    width: 500px;
+    text-align: center;
+  }
+.content-head{
+  
+ 
+  background-color: #1c003b;
+  width: 100%;
+  height: 600px;
+  
+
+}
+.content-head>p{
+  color:#eeedf1;
+padding:250px;
+font-size: 50px;
+}
+.row{
+  padding:100px 50px;
+}
+.row.ig{
+  padding:0px;
+  padding-bottom: 50px;
+}
+hr.new5 {
+  border: 2px solid #013dc4;
+  
+  width:50px;
+}
+.border-content{
+  width: 350px;
+  height: 120px;
+  box-shadow: 0px -3px 6px 0px rgba(32,58,143,0.8);
+-webkit-box-shadow: 0px -3px 6px 0px rgba(32,58,143,0.8);
+-moz-box-shadow: 0px -3px 6px 0px rgba(32,58,143,0.8);
+color:#651fff; 
+  font-size: 25px;
+  margin: 100px;
+  margin-right: 100px;
+  margin-bottom: 0px ;
+  
+  text-align:start;
+  padding:20px;
+}
+.border-content>a{
+  color:#651fff; 
+  font-size: 25px;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/main.css')}}">
+
+<div class="content-head">
+
+  <p>HealthBotic is a predective modelling healthcare project.</p>
+
+</div>
+
+<div class="container overflow-hidden ">
+  <div class="row gx-5 ">
+    <div class="col">
+      <div class="mr-5"> <img src="{{url_for('static',filename='images/intelligence.gif')}}"></div>
+    </div>
+    <div class="col content-main ">
+
+      <h3><STRONG>Expanding The Use Of <br>Ai in HealthCare</STRONG>
+      </h3>
+      <hr class="new5">
+      <br>
+
+      <p> Healthcare leaders are turning to artificial intelligence as the key to better decision-making, believing
+        it will deliver faster turnaround of insights with small margins for error.
+        Healthbotic which isn’t an expert in treating patients, and health systems shouldn't need to be experts in
+        AI. From
+        finding automations for max ROI, to building, supporting and optimizing AI workforce performance.</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div style="background-color: whitesmoke;">
+  <div class="col content-main" style=" margin: auto;width: 50%; padding: 20px;  width: 800px;">
+    <h3>
+      <center>What Problem Does HealthBiotic Address?</center>
+    </h3>
+ 
+    <br>
+    Skyrocketing costs, unbearable wait times, inefficiencies in drug development in present healthcare systems. We
+    Don't have to solve the same problem twice.
+    HealthBiotic can learn from each past experience and find new patterns and minimize the error.<br>
+    It isn't about replacing the healthcare jobs but rather helping in fast tracking the process.
+  <br>
+    <strong>Integrating AI Into Current Healthcare Business Flow </strong>
+    <br>
+    Most AI tools are standalone applications requiring analysts to learn the application ,expecting a huge learning
+    curve.
+    HealthBotic like applcations can provide a platform to those solutions.
+    <br><br>
+    <strong>Integrating AI Expertise Within the Organization</strong><br>
+    Effective AI integration requires data science expertise.Teaching data science concepts and skills to existing teams
+    is a slow, expensive, and unsustainable process.
+    <br><br>
+    <strong>Integrating Machine Learning and Biology </strong>
+    <br>
+    HealthBotic platform believe's that explicitly trained models will outperform intuition,tackling challenges across
+    R&D where
+    machine learning and modern biological tools can be combined to train truly enabling predictive models.
+    <br><br>
+    <strong>Drug Discovery and Development</strong>
+    <br>
+    Machine learning might not be solution to all problems in R&D, but it’s time to bring new
+    and powerful tools to the process  which we discover and develop new drugs. Over time, we can become the 
+    truly data-driven, integrated, drug discovery and development.
+  </div>
+
+</div>
+
+
+<div class="container overflow-hidden">
+  <div class="row gx-5">
+    <div class="col content-main">
+
+      <h3>How HealthBiotic Works?</h3>
+      <hr class="new5">
+      <p>Like any Ai as a service model ,It works on Data. With more effecient data coming in,Algorithm gets more
+        reliable.
+        Starts with embedding machine learning models from the data collected
+        and produce a data-driven healthcare technology platform.<br>
+        This approach makes it easier for healthcare analysts can
+        use advanced statistical and AI features in their most common use cases, within their existing business
+        intelligence workflows.
+      </p>
+    </div>
+    <div class="col">
+      <div class=" pl-lg-5"><img src="{{url_for('static',filename='images/Ai-Illustraition.jpg')}}" style="width:450px;">
+      </div>
+    </div>
+  </div>
+</div>
+<center><h3 style="color:#013dc4">HealthBotic Tool For Predictive Analysis</h3><hr class="new5"></center>
+<div class="container" >
+  <div class="row ig" >
+    <span class="border-content"  ><a href="kidney"> Kidney Disease Prediction</a></span>
+    
+    <span class="border-content" ><a href="liver"> Liver Cancer <br>Prediction</a></span>
+
+    <!-- Force next columns to break to new line -->
+ 
+
+    <span class="border-content"><a href="diabetes"> Diabetes <br> Prediction</a></span>
+    <span class="border-content"><a href="heart_disease"> Heart Disease <br> Prediction</a></span>
+  </div>
+</div>
+<div class="center">
+  <p>- The World is now awash in data, we can now see every problem in a lot clearer way.</p>
+</div>
+
+{% endblock %}
+
+
+
+

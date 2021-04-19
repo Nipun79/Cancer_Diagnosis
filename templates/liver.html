@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-contact100">
+  <div class="wrap-contact100">
+
+    <span class="contact100-form-title">
+      Liver Cancer Predictor:
+    </span>
+
+    <form action="{{ url_for('predict')}}" method="POST">
+
+      <div class="form-group row pt-3">
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Age" class="col-sm col-form-label-sm">Age: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Age" required="required" name="Age">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col ">
+          <div class="form-group row  ">
+            <label for="Gender" class="col-sm col-form-label-sm ">Gender: </label>
+            <div class="col-auto ">
+              <input type="text" class="form-control form-control-sm" id="Gender" required="required" name="Gender">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <div class="form-group row">
+
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Total_Bilirubin" class="col-sm col-form-label-sm">Total_Bilirubin: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Total_Bilirubin" required="required" name="Total_Bilirubin">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Direct_Bilirubin" class="col-sm col-form-label-sm">Direct_Bilirubin: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Direct_Bilirubin" required="required" name="Direct_Bilirubin">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form-group row">
+
+        <div class="form-group col-auto">
+          <div class="form-group row">
+            <label for="Alkaline_Phosphotase" class="col-sm col-form-label-sm">Alkaline_Phosphot: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Alkaline_Phosphotase" required="required" name="Alkaline_Phosphotase">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Alamine_Aminotransferase" class="col-sm col-form-label-sm">Alamine: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Alamine_Aminotransferase" required="required" name="Alamine_Aminotransferase">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="form-group row">
+
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Aspartate_Aminotransferase" class="col-sm col-form-label-sm">Aspartate_Amino: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Aspartate_Aminotransferase:"
+                required="required" name="Aspartate_Aminotransferase">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Total_Protiens" class="col-sm col-form-label-sm">Total_Protiens: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Total_Protiens" required="required" name="Total_Protiens">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="form-group row">
+
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Albumin" class="col-sm col-form-label-sm">Albumin: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Albumin" required="required" name="Albumin">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group col">
+          <div class="form-group row">
+            <label for="Albumin_and_Globulin_Ratio" class="col-sm col-form-label-sm">Albumin/Globulin: </label>
+            <div class="col-auto">
+              <input type="text" class="form-control form-control-sm" id="Albumin_and_Globulin_Ratio"
+                required="required" name="Albumin_and_Globulin_Ratio">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <div class="container-contact100-form-btn">
+        <div class="wrap-contact100-form-btn">
+          <div class="contact100-form-bgbtn"></div>
+          <button class="contact100-form-btn" type="submit" value="predict">
+            <span>
+              Submit
+              <i class="fa fa-long-arrow-right m-l-20 " aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
