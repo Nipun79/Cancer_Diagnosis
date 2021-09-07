@@ -47,5 +47,5 @@ Sample Tool :
 
 <h6> Steps to setup the project </h6>
 <li> Install python </li>
-<li> pip install -r requirements.txt <li>
+<li> pip install -r requirements.txt </li>
 <li> Run app.py </li>
