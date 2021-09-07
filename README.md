@@ -1,5 +1,5 @@
 HealthBotic is a machine learning web application . <br>
-Heroku Deployement : https://healthbotic.herokuapp.com/home 
+Heroku Deployement : https://healthbotic.herokuapp.com/home  <br>
     ![Capture](https://user-images.githubusercontent.com/80241460/132347133-797f9537-18fc-4e51-a0fa-17bc8122d54f.PNG)
 Users can predict the following medical diseases  <br>
 	
