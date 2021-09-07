@@ -1,5 +1,6 @@
 HealthBotic is a machine learning web application . <br>
 Heroku Deployement : https://healthbotic.herokuapp.com/home 
+    ![Capture](https://user-images.githubusercontent.com/80241460/132347133-797f9537-18fc-4e51-a0fa-17bc8122d54f.PNG)
 Users can predict the following medical diseases  <br>
 	
  <!-- https://www.kaggle.com/shvahidian/predicting-chronic-kidney-disease?kernelSessionId=70798135 
@@ -39,7 +40,7 @@ RandomForestClassifier <!-- https://www.kaggle.com/harisyammnv/liver-disease-pre
           <td>Support Vector Machine </td>
       </tr>
     </table>
-    ![Capture](https://user-images.githubusercontent.com/80241460/132347133-797f9537-18fc-4e51-a0fa-17bc8122d54f.PNG)
+
 
 
 ![image](https://user-images.githubusercontent.com/80241460/132346292-21aa6849-6182-4e71-a178-c5c5d6c5cc69.png)
