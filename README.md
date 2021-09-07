@@ -44,7 +44,9 @@ RandomForestClassifier <!-- https://www.kaggle.com/harisyammnv/liver-disease-pre
 
 Sample Tool :
 ![image](https://user-images.githubusercontent.com/80241460/132346292-21aa6849-6182-4e71-a178-c5c5d6c5cc69.png)
-
+<br>
+![image](https://user-images.githubusercontent.com/80241460/132347946-f5bce56a-9281-4cb7-a7d5-81f1835af15e.png)
+<br>
 <h6> Steps to setup the project </h6>
 <li> Install python </li>
 <li> pip install -r requirements.txt </li>
