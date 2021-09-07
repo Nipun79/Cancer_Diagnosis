@@ -39,3 +39,8 @@ RandomForestClassifier <!-- https://www.kaggle.com/harisyammnv/liver-disease-pre
           <td>Support Vector Machine </td>
       </tr>
     </table>
+    ![image](https://user-images.githubusercontent.com/80241460/132346069-3581c1c9-4dd5-49ec-925d-f8eb945e5fd6.png)
+
+    ![image](https://user-images.githubusercontent.com/80241460/132346200-4f366fe8-fb3f-4a9a-b3ee-f5672e08df7f.png)
+![image](https://user-images.githubusercontent.com/80241460/132346292-21aa6849-6182-4e71-a178-c5c5d6c5cc69.png)
+
